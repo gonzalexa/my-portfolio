@@ -1,21 +1,25 @@
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Projects from "./components/Projects.jsx";
-import About from "./components/About.jsx";
-import Contact from "./components/Contact.jsx";
-import Footer from "./components/Footer.jsx";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-function App() {
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
+
+export default function App() {
   return (
-    <div className="app">
+    <>
       <Navbar />
-      <Hero />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
+      <div style={{ paddingTop: "100px", paddingLeft: "45px" }}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      </div>
+    </>
   );
 }
-
-export default App;
