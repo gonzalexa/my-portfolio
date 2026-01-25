@@ -10,8 +10,8 @@ const logos = [jpmcLogo, metaLogo, ufLogo];
 export default function ClientsMarquee() {
   return (
     <div style={{ textAlign: "center", margin: "48px auto", maxWidth: "800px", overflow: "hidden" }}>
-      <p style={{ marginBottom: "15px", fontWeight: "500", fontSize: "15px" }}>
-        Experience designing for
+      <p style={{ marginBottom: "20px", fontWeight: "300", fontSize: "15px" }}>
+        experience designing for
       </p>
 
       <Marquee gradient={false} speed={50}>

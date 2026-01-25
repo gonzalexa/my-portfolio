@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>
+      <Footer /> 
     </>
   );
 }
