@@ -25,7 +25,7 @@ export default function ProjectCard({ title, description, image, style }) {
   alt={title}
   style={{
     width: "100%",
-    height: "300px", // taller image → more of it visible
+    height: "400px", // taller image → more of it visible
     objectFit: "cover",
     display: "block",
   }}

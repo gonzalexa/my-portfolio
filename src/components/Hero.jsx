@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const enjoys = [
   "rewatching the same shows",
-  "unique truffle chocolate flavors",
+  "unique chocolate truffle flavors",
   "adding new places to my lists on Google Maps",
   "collecting pins for every country i visit",
-  "checking books off my TBR"
+  "checking books off my ToBeRead"
 ];
 
 export default function Hero() {
@@ -15,7 +15,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % enjoys.length);
-    }, 3000);
+    }, 3200);
 
     return () => clearInterval(interval);
   }, []);
