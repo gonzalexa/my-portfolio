@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const enjoys = [
+  "rewatching the same shows",
+  "unique truffle chocolate flavors",
+  "adding new places to my lists on Google Maps",
+  "collecting pins for every country i visit",
+  "checking books off my TBR"
+];
 
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % enjoys.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+    
   return (
     <section style={{ padding: "20px 0px"}}>
-      <h1>
-        hi, i’m alexa!
-      </h1>
+      <h1>hi, i’m alexa!</h1>
 
       <h2>
         user experience designer{" "}
@@ -13,9 +30,33 @@ export default function Hero() {
       </h2>
 
 
-      <p style={{maxWidth: "650px"}}>
-        I guess you could call me a creative developer. I use my background in computer science to create designs that look good and work even better.
+      <p style={{ maxWidth: "650px" }}>
+        i enjoy{" "}
+        <span
+          style={{
+            position: "relative",
+            display: "inline-block",
+            minWidth: "28ch"
+          }}
+        >
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={enjoys[index]}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.35 }}
+              style={{left: 0 }}
+            >
+              {enjoys[index]}
+            </motion.span>
+          </AnimatePresence>
+        </span>
       </p>
     </section>
   );
 }
+
+
+
+
