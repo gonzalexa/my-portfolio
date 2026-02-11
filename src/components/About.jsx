@@ -32,7 +32,7 @@ export default function About() {
             My mom is an artist, my dad an engineer, and I like to think I inherited the best of both worlds. That mix of imagination and problem-solving has shaped the way I approach both design and development, always aiming for thoughtful, user-centered solutions.
           </p>
 
-          <p>Outside of my work:</p>
+          <p>Fun facts about me:</p>
 
           <ul>
             <li>I absolutely love to travel; whether it’s solo, with friends, or with family</li>
