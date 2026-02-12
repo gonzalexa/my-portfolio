@@ -1,0 +1,28 @@
+/* Contact */
+.contact-intro {
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: #6e6e73;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #1d1d1f;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.contact-item:hover {
+  opacity: 0.6;
+  transform: translateX(4px);
+}

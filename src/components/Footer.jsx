@@ -20,7 +20,7 @@ export default function Footer() {
           lineHeight: "1.6",
         }}
       >
-        Designed & coded with love.
+        Designed & coded with care.
         <br />
         Thanks for stopping by.
       </p>
