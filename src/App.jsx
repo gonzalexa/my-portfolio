@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <div style={{ paddingTop: "100px", paddingLeft: "45px" }}>
+      <div className="page-container">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

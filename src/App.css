@@ -11,6 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
+.page-container {
+  padding-top: 100px; /* space for fixed navbar */
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

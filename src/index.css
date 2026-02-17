@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Inter:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:wght@400;500;600;700&display=swap');
 
 /* Apple-style global reset */
 * {
@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #f5f5f7;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #F4EFE6;
   color: #1d1d1f;
   line-height: 1.6;
 }
@@ -25,6 +25,50 @@ body {
   padding: 64px 24px;
 }
 
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+
+  
+
+  background: linear-gradient(
+    to bottom,
+  #5C8FB8 0%,
+  #86B2D6 35%,
+  #C9DFF1 65%,
+  #F4EFE6 100%
+  );
+}
+
+.hero-inner {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1,
+.hero h2 {
+  color: #F4EFE6;
+}
+
+.hero h1 {
+  font-size: 75px;
+  font-weight: 300;
+}
+
+.hero h2 {
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.smaller-text {
+  font-size: 0.60em; /* 75% of the surrounding font size */
+}
+
 /* Section spacing */
 section {
   margin-bottom: 120px;
@@ -33,7 +77,7 @@ section {
 
 /* Headings */
 h1, h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', serif;
 }
 
 h1 {
@@ -64,20 +108,16 @@ a:hover {
   text-decoration: underline;
 }
 
-.smaller-text {
-  font-size: 0.60em; /* 75% of the surrounding font size */
-}
-
 /* Navbar */
 .navbar {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 64px;
-  background: rgba(245, 245, 247, 0.8);
-  backdrop-filter: blur(12px);
+  background: transparent;  /* change this */
+  backdrop-filter: blur(8px); /* softer blur */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,12 +128,13 @@ a:hover {
 .nav-name {
   font-size: 20px;
   font-weight: 500;
+  color: #1B365D;
 }
 
 .nav-links a {
   margin-left: 32px;
   font-size: 16px;
-  color: #1d1d1f;
+  color: #1B365D;
   text-decoration: none;
 }
 
