@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:wght@400;500;600;700&display=swap');
 
-/* Apple-style global reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -29,10 +29,8 @@ body {
   min-height: 100vh;
 
   display: flex;
-  align-items: center;      /* vertical center */
-  justify-content: center;  /* horizontal center */
-
-  
+  align-items: center;      
+  justify-content: center;  
 
   background: linear-gradient(
     to bottom,
@@ -69,13 +67,22 @@ body {
   font-size: 0.60em; /* 75% of the surrounding font size */
 }
 
-/* Section spacing */
-section {
-  margin-bottom: 120px;
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 16px;
+  letter-spacing: 0.02em;
+
+  color: #1B365D;  /* soft medium blue */
+  /*cursor: pointer;*/
+
+  transition: opacity 0.2s ease;
 }
 
-
-/* Headings */
+/* Headings & paragraph*/
 h1, h2 {
   font-family: 'Lora', serif;
 }
@@ -140,6 +147,11 @@ a:hover {
 
 .nav-links a:hover {
   opacity: 0.7;
+}
+
+.nav-name:hover {
+  text-decoration: none;
+  opacity: 0.7
 }
 
 

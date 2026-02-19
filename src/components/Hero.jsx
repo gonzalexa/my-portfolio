@@ -13,6 +13,10 @@ export default function Hero() {
           <span className="smaller-text">& engineer ;)</span>
         </h2>
       </div>
+
+      <div className="scroll-indicator">
+        my work ↓
+      </div>
     </section>
   );
 }
