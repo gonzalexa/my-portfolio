@@ -10,9 +10,15 @@ export default function Navbar() {
 
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects">Work</Link>
         <Link to="/about">About</Link>
-        <Link to="/resume">Resume</Link>
+        <a 
+          href="https://docs.google.com/document/d/15MNpdVCxYScxo8z2AK73CQ1nEzp4CStFRN3Qz0bh5bI/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+            Resume
+        </a>
         <Link to="/contact">Contact</Link>
       </div>
     </nav>

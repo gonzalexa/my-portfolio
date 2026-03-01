@@ -1,7 +1,20 @@
 /* Contact */
+
+#contact {
+  margin-top: 120px;   /* space below navbar / previous section */
+  margin-left: 45px;   /* left alignment spacing */
+}
+
+#contact h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #1B365D;
+
+}
+
 .contact-intro {
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 16px;
   color: #6e6e73;
 }
 
@@ -15,8 +28,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #1d1d1f;
   text-decoration: none;
   transition: opacity 0.2s ease, transform 0.2s ease;

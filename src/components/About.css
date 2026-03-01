@@ -5,9 +5,18 @@
   gap: 2rem;
   align-items: start;
   max-width: 1100px;
+  margin-top: 120px;   /* space below navbar / previous section */
+  margin-left: 45px;   /* left alignment spacing */
 }
 
+
 /* TEXT */
+.about-text h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #1B365D; 
+}
+
 .about-text p {
   line-height: 1.7;
   margin-bottom: 1.25rem;

@@ -1,49 +1,40 @@
 import React from "react";
+import { Mail, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer
-      style={{
-        borderTop: "1px solid #e5e5e5",
-        marginTop: "120px",
-        padding: "32px 20px",
-      }}
-    >
-
-      {/* Cute message */}
-      <p
-        style={{
-          maxWidth: "1100px",
-          margin: "0 auto 32px",
-          fontSize: "14px",
-          color: "#777",
-          lineHeight: "1.6",
-        }}
-      >
+    <footer className="footer">
+      <p className="footer-message">
         Designed & coded with care.
         <br />
         Thanks for stopping by.
       </p>
 
-      <div
-        style={{
-          maxWidth: "1100px",
-          margin: "0 auto",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          fontSize: "14px",
-          color: "#555",
-        }}
-      >
+      <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Alexa Gonzalez</span>
 
-        <div style={{ display: "flex", gap: "24px" }}>
-          <a href="mailto:alexa.95746@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/gonzalezalexa049/" target="_blank">
+        <div className="footer-links">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=lex.gonzlo7@gmail.com&su=Let's%20connect!"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Email
+        </a>
+
+          <a
+            href="https://www.linkedin.com/in/gonzalezalexa049/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
-          <a href="https://github.com/yourusername" target="_blank">
+
+          <a
+            href="https://docs.google.com/document/d/15MNpdVCxYScxo8z2AK73CQ1nEzp4CStFRN3Qz0bh5bI/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Resume
           </a>
         </div>

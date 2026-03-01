@@ -1,54 +1,54 @@
 import React from "react";
+import "./Projects.css";
+
+import cc from "../images/cc.png";
 
 const fullProjects = [
   {
-    title: "Project One",
-    description: "Full breakdown with images and more info.",
-    imageUrl: "/images/project1.png",
+    title: "Cuisine Compass",
+    meta: "Lorem • Lorem",
+    description: "A digital cookbook platform where users can find and share recipes",
+    image: cc,
     link: "#"
   },
-  {
-    title: "Project Two",
-    description: "Details of my second project.",
-    imageUrl: "/images/project2.png",
-    link: "#"
+
+    {
+    title: "JPMorganChase",
+    meta: "Lorem • Lorem",
+    description: "A digital cookbook platform where users can find and share recipes",
   },
-  // add more projects
+
+    {
+    title: "JPMorganChase",
+    meta: "Lorem • Lorem",
+    description: "A digital cookbook platform where users can find and share recipes",
+  },
+
+    {
+    title: "Meta",
+    meta: "Lorem • Lorem",
+    description: "A digital cookbook platform where users can find and share recipes",
+  }
 ];
 
 export default function ProjectsPage() {
   return (
-    <section style={{ padding: "80px 20px", maxWidth: "1200px", margin: "0 auto" }}>
-      <h1 style={{ textAlign: "center", marginBottom: "60px" }}>Projects</h1>
-      <div style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
-        gap: "32px"
-      }}>
+    <section className="projects-section">
+      <h1 className="projects-title">Work</h1>
+
+      <div className="projects-list">
         {fullProjects.map((project, i) => (
-          <a
-            key={i}
-            href={project.link}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              borderRadius: "12px",
-              overflow: "hidden",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.05)",
-              transition: "transform 0.3s, box-shadow 0.3s",
-              cursor: "pointer",
-              textDecoration: "none",
-              color: "inherit",
-            }}
-          >
+          <a key={i} href={project.link} className="project-row">
             <img
-              src={project.imageUrl}
+              src={project.image}
               alt={project.title}
-              style={{ width: "100%", height: "220px", objectFit: "cover" }}
+              className="project-image"
             />
-            <div style={{ padding: "20px" }}>
-              <h3 style={{ marginBottom: "10px" }}>{project.title}</h3>
-              <p style={{ color: "#555" }}>{project.description}</p>
+
+            <div className="project-content">
+              <h2 className="project-title">{project.title}</h2>
+              <p className="project-meta">{project.meta}</p>
+              <p className="project-description">{project.description}</p>
             </div>
           </a>
         ))}
