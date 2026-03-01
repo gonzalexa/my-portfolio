@@ -4,41 +4,69 @@
   grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
   align-items: start;
-  max-width: 1100px;
+  max-width: 1200px;
   margin-top: 120px;   /* space below navbar / previous section */
   margin-left: 45px;   /* left alignment spacing */
 }
 
 
 /* TEXT */
+
 .about-text h2 {
   font-size: 25px;
   font-weight: 500;
   color: #1B365D; 
+  margin-bottom: 35px;
 }
 
 .about-text p {
   line-height: 1.7;
   margin-bottom: 1.25rem;
-  color: #444;
+  color: #000;
 }
 
 .about-text ul {
-  list-style-type: disc;   /* standard bullets */
-  padding-left: 1.5rem;    /* indent bullets nicely */
+  list-style: none;   /* remove default bullets */
+  padding-left: 0;    /* remove default indent */
   margin-bottom: 1.25rem;
 }
 
 .about-text li {
   margin-bottom: 0.75rem;
   line-height: 1.6;
-  color: #444;
+  color: #000;
+  position: relative;
+  padding-left: 1.8em; /* space for the emoji */
+}
+
+/* First item: plane */
+.about-text li:nth-child(1)::before {
+  content: "✈️";  /* airplane emoji */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Second item: running guy */
+.about-text li:nth-child(2)::before {
+  content: "🏃";   /* running emoji */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Third item: yellow heart */
+.about-text li:nth-child(3)::before {
+  content: "💛";   /* yellow heart emoji */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .about-carousel {
   width: 100%;
   max-width: 420px;
-  /* remove position relative on carousel, put it on image wrapper */
+  margin-left: 100px;  /* shift carousel right */
   margin-bottom: 16px; /* space for dots */
 }
 
@@ -55,7 +83,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 30px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }

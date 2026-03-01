@@ -4,11 +4,10 @@ import "./About.css";
 import image1 from "../images/graduation.JPG";
 import image2 from "../images/half.jpg";
 import image3 from "../images/sunflowers.JPG";
-import image4 from "../images/sunset.jpg";
-import image5 from "../images/travel.jpg";
+import image4 from "../images/travel.jpg";
 
 export default function About() {
-  const images = [image1, image2, image3, image4, image5];
+  const images = [image1, image2, image3, image4];
   const [current, setCurrent] = useState(0);
 
   // Autoplay
@@ -35,9 +34,9 @@ export default function About() {
           <p>Fun facts about me:</p>
 
           <ul>
-            <li>I absolutely love to travel; whether it’s solo, with friends, or with family</li>
-            <li>I recently ran a half marathon with my cousin. One and done I think.</li>
-            <li>Sunsets and sunflowers are two things that always make me smile.</li>
+            <li>I love traveling and I believe that you learn from experiences more than you do from a textbook. </li>
+            <li>I recently ran my first half marathon with my cousin. I don't know if I'll be doing it again...</li>
+            <li>Sunsets and sunflowers are two things that never fail to make me smile.</li>
           </ul>
 
           <p>
