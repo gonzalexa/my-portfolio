@@ -9,22 +9,22 @@ const fullProjects = [
     meta: "Lorem • Lorem",
     description: "A digital cookbook platform where users can find and share recipes",
     image: cc,
-    link: "#"
+    link: "/project_folder/cuisine-compass"
   },
 
-    {
+  {
     title: "JPMorganChase",
     meta: "Lorem • Lorem",
     description: "A digital cookbook platform where users can find and share recipes",
   },
 
-    {
+  {
     title: "JPMorganChase",
     meta: "Lorem • Lorem",
     description: "A digital cookbook platform where users can find and share recipes",
   },
 
-    {
+  {
     title: "Meta",
     meta: "Lorem • Lorem",
     description: "A digital cookbook platform where users can find and share recipes",

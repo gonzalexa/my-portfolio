@@ -29,9 +29,6 @@
   transition: opacity 0.3s ease;
 }
 
-.project-row:hover {
-  opacity: 0.85;
-}
 
 .project-image {
   width: 50%;

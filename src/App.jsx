@@ -7,6 +7,9 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import CuisineCompass from "./pages/project_folder/CuisineCompass";
+
+
 
 export default function App() {
   // Scroll to top immediately on route change
@@ -31,6 +34,7 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/project_folder/cuisine-compass" element={<CuisineCompass />} />
         </Routes>
       </div>
       <Footer />
