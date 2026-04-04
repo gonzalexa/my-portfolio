@@ -24,10 +24,10 @@ export default function App() {
   };
 
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
       <ScrollToTop /> {/* resets scroll instantly on route change */}
-      <div className="page-container">
+      <div className="page-container"  style={{ flex: 1}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -38,6 +38,6 @@ export default function App() {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>  
   );
 }

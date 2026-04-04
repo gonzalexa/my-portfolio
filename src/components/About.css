@@ -1,11 +1,11 @@
 /* CONTAINER */
 .about-container {
+  margin-top: 120px;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
   align-items: start;
   max-width: 1200px;
-  margin-top: 120px;   /* space below navbar / previous section */
   margin-left: 45px;   /* left alignment spacing */
 }
 
