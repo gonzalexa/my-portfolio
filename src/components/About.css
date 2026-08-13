@@ -111,3 +111,37 @@
 .dot.active {
   background-color: #333;
 }
+
+@media (max-width: 900px) {
+  .about-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-carousel {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .carousel-images {
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    margin-top: 110px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .carousel-images {
+    height: 280px;
+  }
+}

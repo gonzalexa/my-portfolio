@@ -82,6 +82,10 @@ body {
   transition: opacity 0.2s ease;
 }
 
+.scroll-indicator {
+  cursor: pointer;
+}
+
 /* Headings & paragraph*/
 h1, h2 {
   font-family: 'Lora', serif;
@@ -138,8 +142,14 @@ a:hover {
   color: #1B365D;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
 .nav-links a {
-  margin-left: 32px;
   font-size: 16px;
   color: #1B365D;
   text-decoration: none;
@@ -189,6 +199,7 @@ a:hover {
 .footer-links {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .footer a {
@@ -198,4 +209,96 @@ a:hover {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    height: auto;
+    min-height: 64px;
+    padding: 14px 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 14px 18px;
+  }
+
+  .nav-links a,
+  .nav-name {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 100px 20px 70px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .scroll-indicator {
+    bottom: 22px;
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .nav-links {
+    gap: 10px 12px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .scroll-indicator {
+    bottom: 18px;
+  }
+
+  .footer {
+    padding: 24px 16px;
+  }
+
+  .footer-links {
+    gap: 12px 18px;
+  }
 }

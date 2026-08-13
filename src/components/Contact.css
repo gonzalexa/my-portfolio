@@ -38,3 +38,26 @@
   opacity: 0.6;
   transform: translateX(4px);
 }
+
+@media (max-width: 900px) {
+  #contact {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact {
+    margin-top: 110px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  #contact h2 {
+    font-size: 22px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+  }
+}

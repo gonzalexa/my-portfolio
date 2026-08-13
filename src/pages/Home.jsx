@@ -1,5 +1,4 @@
 import Hero from "../components/Hero";
-import ClientsMarquee from "../components/ClientsMarquee";
 import HomeProjects from "../components/HomeProjects";
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
     <>
       <Hero />
       <HomeProjects />
-      <ClientsMarquee />
     </>
   );
 }
