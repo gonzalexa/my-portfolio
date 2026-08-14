@@ -187,24 +187,44 @@ export default function MetaPage() {
         </div>
       </div>
 
+      <div style={{ marginBottom: "36px", background: "linear-gradient(135deg, #eaf4ff 0%, #f7f3ee 100%)", borderRadius: "20px", padding: "28px" }}>
+        <p style={{ margin: 0, fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#6e6e73", fontWeight: 700 }}>
+          What I learned
+        </p>
+        <p style={{ marginTop: "16px", lineHeight: 1.8, color: "#2f3b45", marginBottom: 0 }}>
+          During the project I learned how to present design work to cross-functional partners, iterate quickly with engineering feedback, and adapt prototypes into real product experiments. Seeing two designs enter dogtesting and receiving privacy review taught me the importance of ship-ready details, documentation, and collaboration across disciplines.
+        </p>
+      </div>
+
       <div style={{ marginBottom: "36px" }}>
         <p style={{ margin: 0, fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#6e6e73", fontWeight: 700 }}>
           Conclusion
         </p>
-        <div style={{ marginTop: "18px", background: "linear-gradient(135deg, #eaf4ff 0%, #f7f3ee 100%)", borderRadius: "20px", padding: "28px" }}>
+        <div style={{ marginTop: "18px", background: "#ffffff", border: "1px solid rgba(29,42,54,0.08)", borderRadius: "20px", padding: "28px" }}>
           <p style={{ lineHeight: 1.8, color: "#2f3b45", margin: 0 }}>
-            During the week where I was refining my final presentation, my engineer sent me an update on how two of the three prototypes were coming along in dogtesting. It was incredible to see my designs in a real product flow rather than only on Figma. I was also told that the project had been approved for privacy review, which made the experience even more meaningful. Seeing the work move from concept to real product validation was one of the most rewarding moments of the internship.
+            It was incredible to see my designs in a real product flow rather than only on Figma. The project receiving privacy review and entering dogtesting validated the impact and readiness of the work. These milestones reinforced how iterative design, rapid prototyping, and strong cross-functional collaboration are essential to moving ideas forward.
           </p>
         </div>
       </div>
 
-      <div style={{ background: "#1d2a36", borderRadius: "20px", padding: "28px", color: "#f7f8fa" }}>
+      <div style={{ background: "#1d2a36", borderRadius: "20px", padding: "28px", color: "#f7f8fa", marginBottom: "36px" }}>
         <p style={{ margin: 0, fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#dfeaf3", fontWeight: 700 }}>
           Next steps
         </p>
         <p style={{ marginTop: "16px", lineHeight: 1.8, color: "#edf4fb", marginBottom: 0 }}>
-          The next step would be to continue iterating on the strongest concept based on dogtesting feedback, validate the experience with more young adult users, and determine whether the seller trust signal should exist in additional parts of the marketplace journey beyond the profile page. It would also be valuable to evaluate how the design affects conversion, trust perception, and user confidence over time.
+          Continue iterating on the strongest concept based on dogtesting feedback, run more user validation with young adults, and measure the impact on trust and conversion. Expand the trust signal to additional marketplace touchpoints as warranted by results.
         </p>
+      </div>
+
+      <div>
+        <p style={{ margin: 0, fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#6e6e73", fontWeight: 700 }}>
+          Photos of my summer
+        </p>
+        <div style={{ marginTop: "18px", background: "#f5f7fa", borderRadius: "20px", padding: "28px", textAlign: "center", color: "#6e6e73" }}>
+          <p style={{ margin: 0, lineHeight: 1.6 }}>
+            Coming soon — photos and memories from the internship at Meta.
+          </p>
+        </div>
       </div>
     </section>
   );

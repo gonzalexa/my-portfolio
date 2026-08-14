@@ -1,6 +1,7 @@
 import cc from "../images/cc.png";
-import fbmarket from "../images/fbmarket.jpg";
+import facebook_marketplace_logo from "../images/facebook-marketplace-logo.jpg";
 import confluence from "../images/confluence.png";
+import jpmc from "../images/jpmc.svg";
 
 export const fullProjects = [
 	{
@@ -14,7 +15,7 @@ export const fullProjects = [
 		title: "ICM",
 		meta: "Internal Tools • UX",
 		description: "Redesigning an internal case management workflow for clarity and efficiency.",
-		image: null,
+		image: jpmc,
 		link: "/project_folder/icm",
 	},
 	{
@@ -28,7 +29,7 @@ export const fullProjects = [
 		title: "Meta Marketplace",
 		meta: "Trust • UX Research",
 		description: "Boosting trust in Facebook Marketplace for young adults through clearer experiences.",
-		image: fbmarket,
+		image: facebook_marketplace_logo,
 		link: "/project_folder/meta",
 	},
 ];

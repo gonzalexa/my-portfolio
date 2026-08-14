@@ -107,6 +107,17 @@ export default function ReskinPage() {
           Continue to refine the template, expand documentation, and onboard others with the Confluence How-To guide. Track improvements in update frequency and reduced time-to-find as success metrics for the reskin.
         </p>
       </div>
+      
+        <div style={{ marginTop: "36px" }}>
+          <p style={{ margin: 0, fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#6e6e73", fontWeight: 700 }}>
+            Photos of my summer
+          </p>
+          <div style={{ marginTop: "18px", background: "#f5f7fa", borderRadius: "20px", padding: "28px", textAlign: "center", color: "#6e6e73" }}>
+            <p style={{ margin: 0, lineHeight: 1.6 }}>
+              Coming soon — photos and memories from the reskin work.
+            </p>
+          </div>
+        </div>
     </section>
   );
 }

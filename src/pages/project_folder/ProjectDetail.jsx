@@ -74,6 +74,18 @@ export default function ProjectDetail({
           <p style={{ margin: 0, color: "#2f2f34", lineHeight: 1.8 }}>{impact}</p>
         </div>
       )}
+
+      {/* Photos section (summer) - shared across ProjectDetail pages */}
+      <div style={{ marginTop: "36px" }}>
+        <p style={{ margin: 0, fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#6e6e73", fontWeight: 700 }}>
+          Photos of my summer
+        </p>
+        <div style={{ marginTop: "18px", background: "#f5f7fa", borderRadius: "20px", padding: "28px", textAlign: "center", color: "#6e6e73" }}>
+          <p style={{ margin: 0, lineHeight: 1.6 }}>
+            Coming soon — photos and memories from the project.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
