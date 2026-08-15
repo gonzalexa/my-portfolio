@@ -1,0 +1,151 @@
+.projects-list.pills {
+  /* narrower cards as requested */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 65px;
+}
+
+.project-row.pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 28px 32px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid rgba(27, 54, 93, 0.06);
+  box-shadow: 0 10px 22px rgba(20, 45, 93, 0.06);
+  transition: transform 380ms cubic-bezier(.2,.9,.2,1), box-shadow 380ms cubic-bezier(.2,.9,.2,1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-row.pill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(20, 45, 93, 0.12);
+  cursor: pointer;
+}
+
+.project-row.pill:active {
+  transform: translateY(-2px);
+  transition: transform 240ms ease;
+}
+
+.project-logo {
+  /* no longer used for pill layout (removed top-left logo) */
+  display: none;
+}
+
+.project-row.pill .project-content {
+  width: 100%;
+}
+
+.project-row.pill .project-title {
+  font-family: 'Lora', serif; /* match site headings */
+  font-size: 36px;
+  margin: 6px 0 8px 0;
+  font-weight: 600; /* match site heading weight */
+  line-height: 1.05;
+  letter-spacing: -0.03em; /* match site heading spacing */
+  color: inherit;
+}
+
+.project-row.pill .project-meta {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  color: #bfc5ca;
+  margin-bottom: 18px;
+  letter-spacing: 0.02em;
+}
+
+.project-row.pill .project-description {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #222222;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .projects-list.pills {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-row.pill {
+    padding: 28px;
+  }
+
+  .project-logo {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 6px;
+  }
+
+  .project-row.pill .project-title {
+    font-size: 28px;
+  }
+}
+
+/* ----- laptop visual for first pill ----- */
+.project-row.pill.with-visual {
+  /* switch to row layout to place visual on the right */
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+}
+
+.project-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.laptop-frame {
+  position: relative;
+  display: block;
+  width: 320px; /* frame matches laptop-bg size for predictable overlay */
+}
+
+.laptop-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.laptop-logo {
+  position: absolute;
+  z-index: 2;
+  /* Offsets tuned to fit inside the laptop screen area of the provided image. */
+  top: 20px;
+  left: 36px;
+  right: 36px;
+  bottom: 36px;
+  width: auto;
+  height: auto;
+  max-width: calc(100% - 72px);
+  max-height: calc(100% - 72px);
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .project-row.pill.with-visual {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-visual {
+    width: 100%;
+    display: block;
+  }
+
+  .laptop-screen {
+    width: 260px;
+    height: 160px;
+  }
+}

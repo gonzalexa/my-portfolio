@@ -7,7 +7,7 @@ export const fullProjects = [
 	{
 		title: "Cuisine Compass",
 		meta: "UX • Product Design",
-		description: "A digital cookbook platform where users can discover, save, and share recipes.",
+		description: "Cuisine Compass is a React-based web app that helps users discover, share, and track affordable, nutritious recipes. As Project Manager and frontend developer, I coordinated the team while building key features including onboarding, recipe viewing, grocery lists, and user profiles.",
 		image: cc,
 		link: "/project_folder/cuisine-compass",
 	},
